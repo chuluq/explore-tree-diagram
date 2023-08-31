@@ -22,3 +22,18 @@ body {
 .chartContainer {
   gap: 16px;
 }
+
+.orgchart-container {
+  border: none;
+}
+.orgchart {
+  background-image: none;
+  border: none;
+}
+.orgchart.myChart > ul > li > ul li::before {
+  border-top-color: #656271;
+}
+.orgchart.myChart > ul > li > ul li .oc-node::before,
+.orgchart.myChart ul li .oc-node:not(:only-child)::after {
+  background-color: #656271;
+}
